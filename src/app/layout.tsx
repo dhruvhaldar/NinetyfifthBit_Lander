@@ -1,4 +1,6 @@
 
+'use client'; // Required for useEffect
+
 import type { Metadata } from 'next';
 import { Inter, Press_Start_2P } from 'next/font/google';
 import './globals.css';
@@ -6,6 +8,8 @@ import { Toaster } from '@/components/ui/toaster';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import { cn } from '@/lib/utils';
+import { useEffect } from 'react';
+import { initCrashlytics } from '@/lib/firebase';
 
 const inter = Inter({
   variable: '--font-inter',
@@ -19,19 +23,37 @@ const pressStart2P = Press_Start_2P({
   display: 'swap',
 });
 
-export const metadata: Metadata = {
-  title: 'Ninetyfifth Bit - Indie Game Development',
-  description: 'Home of indie game developer Ninetyfifth Bit, creator of Cosmic Capture and Chip Quest.',
-  icons: {
-    icon: '/favicon.ico', // Assuming you might add a favicon later
-  },
-};
+// Metadata has been removed from here as it's a client component.
+// Individual pages (e.g., src/app/page.tsx) should define their own metadata.
+// The root favicon can be handled by placing a favicon.ico in the app directory or public folder.
 
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  useEffect(() => {
+    // Initialize Firebase Crashlytics on the client-side.
+    // It's good practice to only enable it in production.
+    if (process.env.NODE_ENV === 'production') {
+      if (process.env.NEXT_PUBLIC_FIREBASE_API_KEY && process.env.NEXT_PUBLIC_FIREBASE_API_KEY !== 'your_api_key') {
+        initCrashlytics().catch(error => {
+          console.error("Failed to initialize Firebase Crashlytics:", error);
+        });
+      } else {
+        console.warn("Firebase API key not set. Crashlytics will not be initialized.");
+      }
+    } else {
+      console.log("Crashlytics initialization is skipped in development mode. Set NODE_ENV=production to enable.");
+      // Optionally, you can initialize in dev for testing if Firebase config is present:
+      // if (process.env.NEXT_PUBLIC_FIREBASE_API_KEY && process.env.NEXT_PUBLIC_FIREBASE_API_KEY !== 'your_api_key') {
+      //   initCrashlytics().catch(error => {
+      //     console.error("Failed to initialize Firebase Crashlytics (dev):", error);
+      //   });
+      // }
+    }
+  }, []);
+
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
