@@ -1,3 +1,4 @@
+md
 # Firebase Studio
 
 This is a NextJS starter in Firebase Studio.
@@ -26,6 +27,45 @@ To get started, take a look at `src/app/page.tsx`.
     npm run genkit:watch
     ```
 
+## Deploying to Vercel
+
+Vercel is the company behind Next.js and provides a seamless deployment experience for Next.js applications.
+
+1.  **Push Your Code to a Git Repository:**
+    *   If you haven't already, create a repository on GitHub, GitLab, or Bitbucket and push your project code to it.
+
+2.  **Sign Up/Log In to Vercel:**
+    *   Go to [vercel.com](https://vercel.com/) and sign up or log in.
+
+3.  **Import Your Project:**
+    *   From your Vercel dashboard, click on "Add New..." > "Project".
+    *   Connect your Git provider (GitHub, GitLab, Bitbucket) if you haven't already.
+    *   Select the repository for your project and click "Import".
+
+4.  **Configure Project (Usually Automatic):**
+    *   Vercel typically auto-detects that it's a Next.js project and configures the build settings correctly. You usually don't need to change anything here.
+
+5.  **Set Up Environment Variables:**
+    *   In your Vercel project settings (Project Settings > Environment Variables), you need to add the environment variables your application uses. These are the same variables found in your `.env` file:
+        *   `NEXT_PUBLIC_FIREBASE_API_KEY`
+        *   `NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN`
+        *   `NEXT_PUBLIC_FIREBASE_PROJECT_ID`
+        *   `NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET`
+        *   `NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID`
+        *   `NEXT_PUBLIC_FIREBASE_APP_ID`
+        *   `NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID` (if you're using it)
+        *   Any other environment variables your Genkit flows or other parts of your application might need.
+    *   **Important:** For variables starting with `NEXT_PUBLIC_`, Vercel makes them available to the browser. For server-side only variables (if you add any later, e.g., for Genkit API keys that shouldn't be public), do not prefix them with `NEXT_PUBLIC_`.
+
+6.  **Deploy:**
+    *   Click the "Deploy" button. Vercel will build and deploy your application.
+    *   Once deployed, Vercel will provide you with a URL (e.g., `your-project-name.vercel.app`).
+
+7.  **Custom Domain (Optional):**
+    *   You can add a custom domain to your Vercel project via the "Domains" tab in your project settings.
+
+Vercel will automatically redeploy your application whenever you push changes to the connected Git branch (usually `main` or `master`).
+
 ## Integrating Firebase Crashlytics
 
 Firebase Crashlytics is set up to help you track and fix app stability issues.
@@ -50,8 +90,9 @@ Firebase Crashlytics is set up to help you track and fix app stability issues.
         ```
 
 3.  **Update Environment Variables:**
-    *   Open the `.env` file in the root of your project.
-    *   Copy the values from your Firebase project configuration into the corresponding `NEXT_PUBLIC_FIREBASE_...` variables in the `.env` file.
+    *   Open the `.env` file in the root of your project (for local development).
+    *   For deployment (e.g., to Vercel), add these as environment variables in your Vercel project settings (see "Deploying to Vercel" section).
+    *   Copy the values from your Firebase project configuration into the corresponding `NEXT_PUBLIC_FIREBASE_...` variables:
         *   `NEXT_PUBLIC_FIREBASE_API_KEY`
         *   `NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN`
         *   `NEXT_PUBLIC_FIREBASE_PROJECT_ID`
@@ -68,7 +109,7 @@ Firebase Crashlytics is set up to help you track and fix app stability issues.
     *   Crashlytics will only be initialized in `production` mode (when `NODE_ENV === 'production'`).
 
 5.  **Test (After Deployment):**
-    *   After deploying your application to a production environment, you can test Crashlytics by intentionally causing a client-side error or using the Firebase console to send a test crash.
+    *   After deploying your application to a production environment (like Vercel), you can test Crashlytics by intentionally causing a client-side error or using the Firebase console to send a test crash.
     *   Check your Firebase Crashlytics dashboard to see if errors are reported.
 
 ## Integrating Google AdSense
@@ -120,7 +161,7 @@ To display ads on your website using Google AdSense, follow these steps:
         ```
         google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0
         ```
-    *   This file helps prevent ad fraud and is recommended by Google.
+    *   This file helps prevent ad fraud and is recommended by Google. You can serve this file by placing it in the `public` directory of your Next.js project. Vercel will automatically serve files from the `public` directory at the root of your domain.
 
 7.  **Review AdSense Policies:**
     *   Ensure your site complies with all [AdSense Program policies](https://support.google.com/adsense/answer/48182).
