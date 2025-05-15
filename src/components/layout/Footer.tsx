@@ -12,6 +12,9 @@ const Footer = () => {
         <p className="text-xs mt-1">
           Fueling retro dreams with modern code.
         </p>
+        <p className="text-xs mt-2">
+          Made in India
+        </p>
       </div>
     </footer>
   );
