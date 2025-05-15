@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 export default function HomePage() {
   return (
     <div className="space-y-12">
-      <section className="text-center py-10 bg-card shadow-lg rounded-lg border-2 border-primary/20 p-8">
+      <section className="text-center py-10 bg-card shadow-[0_0_20px_hsl(var(--primary)/0.25)] rounded-lg border-2 border-primary/20 p-8">
         <h1 className="text-2xl md:text-3xl font-heading mb-4 text-primary drop-shadow-sm">
           Ninetyfifth Bit
         </h1>

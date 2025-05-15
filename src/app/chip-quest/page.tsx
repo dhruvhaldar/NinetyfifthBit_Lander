@@ -11,13 +11,13 @@ export const metadata: Metadata = {
 const ChipQuestPage = () => {
   return (
     <div className="space-y-12">
-      <header className="text-center py-8 bg-card shadow-lg rounded-lg border-2 border-primary/20 p-6">
+      <header className="text-center py-8 bg-card shadow-[0_0_20px_hsl(var(--primary)/0.25)] rounded-lg border-2 border-primary/20 p-6">
         <Cpu className="w-16 h-16 text-primary mx-auto mb-4" />
-        <h1 className="text-4xl font-heading text-primary mb-2">Chip Quest</h1>
+        <h1 className="text-3xl font-heading text-primary mb-2">Chip Quest</h1>
         <p className="text-xl text-foreground/80">An upcoming adventure into a sprawling digital realm. Solve puzzles, battle corrupted data, and uncover ancient secrets.</p>
       </header>
 
-      <Card className="shadow-xl border-border">
+      <Card className="shadow-[0_0_15px_hsl(var(--primary)/0.15)] border-border">
         <CardHeader>
           <CardTitle className="text-2xl font-heading text-primary/90">About the Game</CardTitle>
         </CardHeader>
@@ -33,7 +33,7 @@ const ChipQuestPage = () => {
         </CardContent>
       </Card>
 
-      <Card className="shadow-xl border-border">
+      <Card className="shadow-[0_0_15px_hsl(var(--primary)/0.15)] border-border">
         <CardHeader>
           <CardTitle className="text-2xl font-heading text-primary/90">Development Status</CardTitle>
         </CardHeader>

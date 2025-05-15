@@ -14,13 +14,13 @@ const ContactPage = () => {
 
   return (
     <div className="max-w-3xl mx-auto space-y-8">
-      <header className="text-center py-8 bg-card shadow-lg rounded-lg border-2 border-primary/20 p-6">
+      <header className="text-center py-8 bg-card shadow-[0_0_20px_hsl(var(--primary)/0.25)] rounded-lg border-2 border-primary/20 p-6">
         <Mail className="w-16 h-16 text-primary mx-auto mb-4" />
-        <h1 className="text-4xl font-heading text-primary mb-2">Get In Touch</h1>
+        <h1 className="text-3xl font-heading text-primary mb-2">Get In Touch</h1>
         <p className="text-xl text-foreground/80">I'd love to hear from you! Whether you have questions, feedback, or just want to say hi.</p>
       </header>
 
-      <Card className="shadow-xl border-border">
+      <Card className="shadow-[0_0_15px_hsl(var(--primary)/0.15)] border-border">
         <CardHeader className="text-center">
           <CardTitle className="text-2xl font-heading text-primary/90">Contact Information</CardTitle>
           <CardDescription className="text-foreground/75">
@@ -43,7 +43,7 @@ const ContactPage = () => {
         </CardContent>
       </Card>
 
-      <Card className="shadow-xl border-border">
+      <Card className="shadow-[0_0_15px_hsl(var(--primary)/0.15)] border-border">
         <CardHeader className="text-center">
           <CardTitle className="text-2xl font-heading text-primary/90">Stay Connected</CardTitle>
           <CardDescription className="text-foreground/75">

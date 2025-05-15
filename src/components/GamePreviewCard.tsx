@@ -18,7 +18,7 @@ type GamePreviewCardProps = {
 
 const GamePreviewCard = ({ title, description, imageSrc, imageAlt, dataAiHint, linkHref, icon }: GamePreviewCardProps) => {
   return (
-    <Card className="overflow-hidden shadow-xl hover:shadow-2xl transition-shadow duration-300 border-2 border-border hover:border-primary/50 flex flex-col">
+    <Card className="overflow-hidden shadow-[0_0_15px_hsl(var(--primary)/0.15)] hover:shadow-[0_0_25px_3px_hsl(var(--primary)/0.25)] transition-shadow duration-300 border-2 border-border hover:border-primary/50 flex flex-col">
       <CardHeader className="pb-2">
         <div className="flex items-center gap-3 mb-2">
           {icon}

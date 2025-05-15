@@ -17,13 +17,13 @@ const CosmicCapturePage = () => {
 
   return (
     <div className="space-y-12">
-      <header className="text-center py-8 bg-card shadow-lg rounded-lg border-2 border-primary/20 p-6">
+      <header className="text-center py-8 bg-card shadow-[0_0_20px_hsl(var(--primary)/0.25)] rounded-lg border-2 border-primary/20 p-6">
         <Rocket className="w-16 h-16 text-primary mx-auto mb-4" />
-        <h1 className="text-4xl font-heading text-primary mb-2">Cosmic Capture</h1>
+        <h1 className="text-3xl font-heading text-primary mb-2">Cosmic Capture</h1>
         <p className="text-xl text-foreground/80">An adrenaline-fueled arcade shooter where you capture cosmic creatures and defend the galaxy!</p>
       </header>
 
-      <Card className="shadow-xl border-border">
+      <Card className="shadow-[0_0_15px_hsl(var(--primary)/0.15)] border-border">
         <CardHeader>
           <CardTitle className="text-2xl font-heading text-primary/90">Game Overview</CardTitle>
         </CardHeader>
@@ -44,7 +44,7 @@ const CosmicCapturePage = () => {
         <h2 className="text-3xl font-heading text-center mb-8 text-primary/90">Visuals from the Void</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {[1, 2, 3].map((item) => (
-            <Card key={item} className="overflow-hidden shadow-lg border-border hover:shadow-xl transition-shadow flex flex-col items-center pt-4 sm:pt-6">
+            <Card key={item} className="overflow-hidden shadow-[0_0_15px_hsl(var(--primary)/0.15)] hover:shadow-[0_0_25px_3px_hsl(var(--primary)/0.25)] transition-shadow border-border flex flex-col items-center pt-4 sm:pt-6">
               <div className="relative aspect-[9/16] w-60 rounded-xl overflow-hidden border-2 border-foreground/10 shadow-lg bg-muted">
                 <Image
                   src={`https://placehold.co/360x640.png`}
@@ -62,7 +62,7 @@ const CosmicCapturePage = () => {
         </div>
       </section>
 
-      <Card className="shadow-xl border-border">
+      <Card className="shadow-[0_0_15px_hsl(var(--primary)/0.15)] border-border">
         <CardHeader>
           <CardTitle className="text-2xl font-heading text-primary/90">Release Information</CardTitle>
         </CardHeader>
