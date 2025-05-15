@@ -47,16 +47,6 @@ export default function HomePage() {
           />
         </div>
       </section>
-
-      <section className="text-center py-10 bg-card shadow-lg rounded-lg border-2 border-primary/20 p-8">
-        <h2 className="text-3xl font-heading mb-4 text-primary/90">Join Our Community</h2>
-        <p className="text-lg text-foreground/80 mb-6">
-          Follow our journey and get the latest updates on our game development.
-        </p>
-        <Button size="lg" asChild className="font-heading">
-          <Link href="/contact">Contact Us</Link>
-        </Button>
-      </section>
     </div>
   );
 }
