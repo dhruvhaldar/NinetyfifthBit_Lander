@@ -32,7 +32,7 @@ const ContactPage = () => {
           <p className="text-lg text-foreground/90">
             For support, press inquiries, or general questions, please email me at:
           </p>
-          <Button size="lg" asChild className="font-heading text-lg group">
+          <Button size="lg" asChild className="font-heading text-base group">
             <Link href={`mailto:${contactEmail}`}>
               <Send className="mr-2 h-5 w-5 group-hover:animate-ping transition-transform" />
               {contactEmail}
