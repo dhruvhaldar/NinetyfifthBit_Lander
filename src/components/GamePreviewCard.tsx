@@ -39,7 +39,7 @@ const GamePreviewCard = ({ title, description, imageSrc, imageAlt, dataAiHint, l
         </div>
       </CardContent>
       <CardFooter className="p-4 bg-secondary/30">
-        <Button asChild className="w-full font-heading text-xs group">
+        <Button size="sm" asChild className="w-full font-heading text-xs group">
           <Link href={linkHref}>
             Learn More 
             <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
