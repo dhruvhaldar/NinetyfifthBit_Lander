@@ -37,6 +37,7 @@ export default function HomePage() {
             imageAlt="Cosmic Capture game preview"
             linkHref="/cosmic-capture"
             icon={<Rocket className="w-8 h-8 text-accent" />}
+            showStoreLinks={true}
           />
           <GamePreviewCard
             title="Chip Quest"
@@ -46,6 +47,7 @@ export default function HomePage() {
             imageAlt="Chip Quest game preview"
             linkHref="/chip-quest"
             icon={<Cpu className="w-8 h-8 text-accent" />}
+            showStoreLinks={true}
           />
         </div>
       </section>
