@@ -25,7 +25,6 @@ const pressStart2P = Press_Start_2P({
 
 // Metadata has been removed from here as it's a client component.
 // Individual pages (e.g., src/app/page.tsx) should define their own metadata.
-// The root favicon can be handled by placing a favicon.ico in the app directory or public folder.
 
 export default function RootLayout({
   children,
@@ -34,7 +33,6 @@ export default function RootLayout({
 }>) {
   useEffect(() => {
     // Initialize Firebase Crashlytics on the client-side.
-    // It's good practice to only enable it in production.
     if (process.env.NODE_ENV === 'production') {
       if (process.env.NEXT_PUBLIC_FIREBASE_API_KEY && process.env.NEXT_PUBLIC_FIREBASE_API_KEY !== 'your_api_key') {
         initCrashlytics().catch(error => {
@@ -45,18 +43,14 @@ export default function RootLayout({
       }
     } else {
       console.log("Crashlytics initialization is skipped in development mode. Set NODE_ENV=production to enable.");
-      // Optionally, you can initialize in dev for testing if Firebase config is present:
-      // if (process.env.NEXT_PUBLIC_FIREBASE_API_KEY && process.env.NEXT_PUBLIC_FIREBASE_API_KEY !== 'your_api_key') {
-      //   initCrashlytics().catch(error => {
-      //     console.error("Failed to initialize Firebase Crashlytics (dev):", error);
-      //   });
-      // }
     }
   }, []);
 
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
+        <link rel="manifest" href="/manifest.json" />
+        <meta name="theme-color" content="#DC143C" />
         {/*
           TODO: Ad Network Script
           If you're integrating with an ad network like Google AdSense,
