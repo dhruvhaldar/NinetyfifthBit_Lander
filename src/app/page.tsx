@@ -1,3 +1,4 @@
+
 import type { Metadata } from 'next';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
@@ -30,7 +31,7 @@ export default function HomePage() {
           <GamePreviewCard
             title="Cosmic Capture"
             description="An adrenaline-fueled arcade shooter! Capture cosmic creatures and defend the galaxy. Coming soon!"
-            imageSrc="https://placehold.co/600x400.png"
+            imageSrc="https://placehold.co/360x640.png"
             dataAiHint="space shooter"
             imageAlt="Cosmic Capture game preview"
             linkHref="/cosmic-capture"
@@ -39,7 +40,7 @@ export default function HomePage() {
           <GamePreviewCard
             title="Chip Quest"
             description="Embark on a perilous journey through a digital realm. Solve puzzles and battle corrupted data. In development."
-            imageSrc="https://placehold.co/600x400.png"
+            imageSrc="https://placehold.co/360x640.png"
             dataAiHint="digital adventure"
             imageAlt="Chip Quest game preview"
             linkHref="/chip-quest"
