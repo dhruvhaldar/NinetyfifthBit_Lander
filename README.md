@@ -29,7 +29,7 @@ To get started, take a look at `src/app/page.tsx`.
 
 ## Deploying to Vercel
 
-Vercel is the company behind Next.js and provides a seamless deployment experience for Next.js applications.
+Vercel is the company behind Next.js and provides a seamless and recommended deployment experience for Next.js applications.
 
 1.  **Push Your Code to a Git Repository:**
     *   If you haven't already, create a repository on GitHub, GitLab, or Bitbucket and push your project code to it.
@@ -167,3 +167,5 @@ To display ads on your website using Google AdSense, follow these steps:
     *   Ensure your site complies with all [AdSense Program policies](https://support.google.com/adsense/answer/48182).
 
 Ads may take some time to appear after setup, and AdSense will only serve ads if your site is approved and has sufficient content.
+
+```
