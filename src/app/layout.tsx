@@ -20,7 +20,7 @@ const pressStart2P = Press_Start_2P({
 
 export const metadata: Metadata = {
   title: 'Ninetyfifth Bit - Indie Game Development',
-  description: 'Home of indie game developer Ninetyfifth Bit, creators of Cosmic Capture and Chip Quest.',
+  description: 'Home of indie game developer Ninetyfifth Bit, creator of Cosmic Capture and Chip Quest.',
   icons: {
     icon: '/favicon.ico', // Assuming you might add a favicon later
   },

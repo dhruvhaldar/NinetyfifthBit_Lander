@@ -5,7 +5,7 @@ import GamePreviewCard from '@/components/GamePreviewCard';
 import { Rocket, Cpu } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Ninetyfifth Bit - Indie Game Creators',
+  title: 'Ninetyfifth Bit - Indie Game Creator',
   description: 'Welcome to Ninetyfifth Bit, an indie game developer crafting unique retro-inspired experiences.',
 };
 
@@ -17,15 +17,15 @@ export default function HomePage() {
           Ninetyfifth Bit
         </h1>
         <p className="text-lg md:text-xl text-foreground/80 max-w-2xl mx-auto mb-8">
-          Forging new worlds from classic pixels. We are indie game developers passionate about creating unique, engaging, and retro-inspired games.
+          Forging new worlds from classic pixels. I am an indie game developer passionate about creating unique, engaging, and retro-inspired games.
         </p>
         <Button size="lg" asChild className="font-heading text-lg">
-          <Link href="#our-games">Explore Our Games</Link>
+          <Link href="#my-games">Explore My Games</Link>
         </Button>
       </section>
 
-      <section id="our-games" className="space-y-8">
-        <h2 className="text-4xl font-heading text-center mb-10 text-primary/90">Our Games</h2>
+      <section id="my-games" className="space-y-8">
+        <h2 className="text-4xl font-heading text-center mb-10 text-primary/90">My Games</h2>
         <div className="grid md:grid-cols-2 gap-8">
           <GamePreviewCard
             title="Cosmic Capture"
