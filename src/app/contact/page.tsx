@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 };
 
 const ContactPage = () => {
-  const contactEmail = "contact@ninetyfifthbit.example.com"; // Placeholder email
+  const contactEmail = "ninetyfifthbit@gmail.com"; // Updated email
 
   return (
     <div className="max-w-3xl mx-auto space-y-8">
