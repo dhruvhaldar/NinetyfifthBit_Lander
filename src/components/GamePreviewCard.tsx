@@ -21,7 +21,7 @@ const GamePreviewCard = ({ title, description, imageSrc, imageAlt, dataAiHint, l
       <CardHeader className="pb-2">
         <div className="flex items-center gap-3 mb-2">
           {icon}
-          <CardTitle className="text-3xl font-heading text-primary">{title}</CardTitle>
+          <CardTitle className="text-2xl font-heading text-primary">{title}</CardTitle>
         </div>
         <CardDescription className="text-foreground/70 text-sm h-12 overflow-hidden">{description}</CardDescription>
       </CardHeader>

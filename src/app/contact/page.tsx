@@ -16,13 +16,13 @@ const ContactPage = () => {
     <div className="max-w-3xl mx-auto space-y-8">
       <header className="text-center py-8 bg-card shadow-lg rounded-lg border-2 border-primary/20 p-6">
         <Mail className="w-16 h-16 text-primary mx-auto mb-4" />
-        <h1 className="text-5xl font-heading text-primary mb-2">Get In Touch</h1>
+        <h1 className="text-4xl font-heading text-primary mb-2">Get In Touch</h1>
         <p className="text-xl text-foreground/80">I'd love to hear from you! Whether you have questions, feedback, or just want to say hi.</p>
       </header>
 
       <Card className="shadow-xl border-border">
         <CardHeader className="text-center">
-          <CardTitle className="text-3xl font-heading text-primary/90">Contact Information</CardTitle>
+          <CardTitle className="text-2xl font-heading text-primary/90">Contact Information</CardTitle>
           <CardDescription className="text-foreground/75">
             Reach out to me via email for any inquiries.
           </CardDescription>
@@ -45,7 +45,7 @@ const ContactPage = () => {
 
       <Card className="shadow-xl border-border">
         <CardHeader className="text-center">
-          <CardTitle className="text-3xl font-heading text-primary/90">Stay Connected</CardTitle>
+          <CardTitle className="text-2xl font-heading text-primary/90">Stay Connected</CardTitle>
           <CardDescription className="text-foreground/75">
             Follow my development journey and get the latest news. (Social links coming soon!)
           </CardDescription>

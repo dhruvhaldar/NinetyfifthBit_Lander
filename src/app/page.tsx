@@ -15,7 +15,7 @@ export default function HomePage() {
   return (
     <div className="space-y-12">
       <section className="text-center py-10 bg-card shadow-lg rounded-lg border-2 border-primary/20 p-8">
-        <h1 className="text-5xl md:text-6xl font-heading mb-4 text-primary drop-shadow-sm">
+        <h1 className="text-4xl md:text-5xl font-heading mb-4 text-primary drop-shadow-sm">
           Ninetyfifth Bit
         </h1>
         <p className="text-lg md:text-xl text-foreground/80 max-w-2xl mx-auto mb-8">
@@ -27,7 +27,7 @@ export default function HomePage() {
       </section>
 
       <section id="my-games" className="space-y-8">
-        <h2 className="text-4xl font-heading text-center mb-10 text-primary/90">My Games</h2>
+        <h2 className="text-3xl font-heading text-center mb-10 text-primary/90">My Games</h2>
         <div className="grid md:grid-cols-2 gap-8">
           <GamePreviewCard
             title="Cosmic Capture"

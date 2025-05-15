@@ -19,13 +19,13 @@ const CosmicCapturePage = () => {
     <div className="space-y-12">
       <header className="text-center py-8 bg-card shadow-lg rounded-lg border-2 border-primary/20 p-6">
         <Rocket className="w-16 h-16 text-primary mx-auto mb-4" />
-        <h1 className="text-5xl font-heading text-primary mb-2">Cosmic Capture</h1>
+        <h1 className="text-4xl font-heading text-primary mb-2">Cosmic Capture</h1>
         <p className="text-xl text-foreground/80">An adrenaline-fueled arcade shooter where you capture cosmic creatures and defend the galaxy!</p>
       </header>
 
       <Card className="shadow-xl border-border">
         <CardHeader>
-          <CardTitle className="text-3xl font-heading text-primary/90">Game Overview</CardTitle>
+          <CardTitle className="text-2xl font-heading text-primary/90">Game Overview</CardTitle>
         </CardHeader>
         <CardContent className="space-y-4 text-foreground/90">
           <p>Dive into the vibrant, chaotic depths of space in Cosmic Capture! Pilot your advanced starfighter through waves of bizarre and powerful cosmic entities. Your mission: capture them for study, protect vital star-lanes, and upgrade your ship to face ever-increasing challenges.</p>
@@ -41,7 +41,7 @@ const CosmicCapturePage = () => {
       </Card>
       
       <section>
-        <h2 className="text-4xl font-heading text-center mb-8 text-primary/90">Visuals from the Void</h2>
+        <h2 className="text-3xl font-heading text-center mb-8 text-primary/90">Visuals from the Void</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {[1, 2, 3].map((item) => (
             <Card key={item} className="overflow-hidden shadow-lg border-border hover:shadow-xl transition-shadow flex flex-col items-center pt-4 sm:pt-6">
@@ -64,7 +64,7 @@ const CosmicCapturePage = () => {
 
       <Card className="shadow-xl border-border">
         <CardHeader>
-          <CardTitle className="text-3xl font-heading text-primary/90">Release Information</CardTitle>
+          <CardTitle className="text-2xl font-heading text-primary/90">Release Information</CardTitle>
         </CardHeader>
         <CardContent className="space-y-4">
           <p className="text-lg text-center text-accent font-semibold animate-pulse">Get Ready, Pilots! Cosmic Capture is warping in soon!</p>

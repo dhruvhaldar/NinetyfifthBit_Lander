@@ -93,7 +93,7 @@ const IdeaGenerator = () => {
       {generatedIdeas && (
         <Card className="shadow-md border-border">
           <CardHeader>
-            <CardTitle className="text-2xl font-heading text-primary/90">AI Generated Ideas</CardTitle>
+            <CardTitle className="text-xl font-heading text-primary/90">AI Generated Ideas</CardTitle>
             <CardDescription>Based on your prompt: "{form.getValues('prompt')}"</CardDescription>
           </CardHeader>
           <CardContent>
