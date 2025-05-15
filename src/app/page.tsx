@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import GamePreviewCard from '@/components/GamePreviewCard';
+import AdPlaceholder from '@/components/AdPlaceholder';
 import { Rocket, Cpu } from 'lucide-react';
 
 export const metadata: Metadata = {
@@ -48,6 +49,13 @@ export default function HomePage() {
           />
         </div>
       </section>
+
+      <AdPlaceholder
+        width="100%"
+        height={100}
+        description="Advertisement Area (e.g., Leaderboard)"
+        className="max-w-4xl mx-auto"
+      />
     </div>
   );
 }

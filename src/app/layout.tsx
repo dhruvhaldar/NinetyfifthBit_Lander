@@ -1,3 +1,4 @@
+
 import type { Metadata } from 'next';
 import { Inter, Press_Start_2P } from 'next/font/google';
 import './globals.css';
@@ -33,6 +34,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        {/*
+          TODO: Ad Network Script
+          If you're integrating with an ad network like Google AdSense,
+          paste their primary script tag here. This script usually initializes
+          the ad system for your site.
+          Example: <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-YOUR_PUBLISHER_ID" crossorigin="anonymous"></script>
+        */}
+      </head>
       <body
         className={cn(
           inter.variable,

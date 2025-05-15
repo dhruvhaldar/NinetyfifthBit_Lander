@@ -1,9 +1,11 @@
+
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Download, Rocket, Smartphone, TabletSmartphone } from 'lucide-react';
 import { Separator } from '@/components/ui/separator';
+import AdPlaceholder from '@/components/AdPlaceholder';
 
 export const metadata: Metadata = {
   title: 'Cosmic Capture | Ninetyfifth Bit',
@@ -84,6 +86,13 @@ const CosmicCapturePage = () => {
           </p>
         </CardContent>
       </Card>
+
+      <AdPlaceholder
+        width={300}
+        height={250}
+        description="Advertisement Area (e.g., Medium Rectangle)"
+        className="mx-auto"
+      />
     </div>
   );
 };
