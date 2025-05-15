@@ -6,21 +6,21 @@ const Header = () => {
   return (
     <header className="bg-card border-b border-border shadow-md sticky top-0 z-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-20">
-        <Link href="/" className="flex items-center gap-2 text-2xl font-heading text-primary hover:text-primary/80 transition-colors">
+        <Link href="/" className="flex items-center gap-2 text-xl font-heading text-primary hover:text-primary/80 transition-colors">
           <Gamepad2 size={32} className="text-accent" />
           Ninetyfifth Bit
         </Link>
         <nav className="flex items-center gap-2 sm:gap-4">
-          <Button variant="ghost" asChild className="font-heading text-sm sm:text-base hover:bg-accent/10">
+          <Button variant="ghost" asChild className="font-heading text-sm hover:bg-accent/10">
             <Link href="/">Home</Link>
           </Button>
-          <Button variant="ghost" asChild className="font-heading text-sm sm:text-base hover:bg-accent/10">
+          <Button variant="ghost" asChild className="font-heading text-sm hover:bg-accent/10">
             <Link href="/cosmic-capture">Cosmic Capture</Link>
           </Button>
-          <Button variant="ghost" asChild className="font-heading text-sm sm:text-base hover:bg-accent/10">
+          <Button variant="ghost" asChild className="font-heading text-sm hover:bg-accent/10">
             <Link href="/chip-quest">Chip Quest</Link>
           </Button>
-          <Button variant="ghost" asChild className="font-heading text-sm sm:text-base hover:bg-accent/10">
+          <Button variant="ghost" asChild className="font-heading text-sm hover:bg-accent/10">
             <Link href="/contact">Contact</Link>
           </Button>
         </nav>
