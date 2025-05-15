@@ -11,16 +11,16 @@ const Header = () => {
           Ninetyfifth Bit
         </Link>
         <nav className="flex items-center gap-2 sm:gap-4">
-          <Button variant="ghost" asChild className="font-heading text-sm hover:bg-accent/10">
+          <Button variant="ghost" asChild className="font-heading text-xs hover:bg-accent/10">
             <Link href="/">Home</Link>
           </Button>
-          <Button variant="ghost" asChild className="font-heading text-sm hover:bg-accent/10">
+          <Button variant="ghost" asChild className="font-heading text-xs hover:bg-accent/10">
             <Link href="/cosmic-capture">Cosmic Capture</Link>
           </Button>
-          <Button variant="ghost" asChild className="font-heading text-sm hover:bg-accent/10">
+          <Button variant="ghost" asChild className="font-heading text-xs hover:bg-accent/10">
             <Link href="/chip-quest">Chip Quest</Link>
           </Button>
-          <Button variant="ghost" asChild className="font-heading text-sm hover:bg-accent/10">
+          <Button variant="ghost" asChild className="font-heading text-xs hover:bg-accent/10">
             <Link href="/contact">Contact</Link>
           </Button>
         </nav>
