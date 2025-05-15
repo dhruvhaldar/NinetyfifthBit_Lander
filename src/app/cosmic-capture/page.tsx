@@ -42,17 +42,17 @@ const CosmicCapturePage = () => {
         <h2 className="text-4xl font-heading text-center mb-8 text-primary/90">Visuals from the Void</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {[1, 2, 3].map((item) => (
-            <Card key={item} className="overflow-hidden shadow-lg border-border hover:shadow-xl transition-shadow">
-              <div className="relative aspect-video w-full">
+            <Card key={item} className="overflow-hidden shadow-lg border-border hover:shadow-xl transition-shadow flex flex-col items-center pt-4 sm:pt-6">
+              <div className="relative aspect-[9/16] w-60 rounded-xl overflow-hidden border-2 border-foreground/10 shadow-lg bg-muted">
                 <Image
-                  src={`https://placehold.co/600x400.png`}
+                  src={`https://placehold.co/360x640.png`}
                   alt={`Cosmic Capture Screenshot ${item}`}
                   data-ai-hint="space battle"
                   fill
                   className="object-cover"
                 />
               </div>
-              <CardContent className="p-3 text-center bg-secondary/30">
+              <CardContent className="p-4 text-center w-full">
                 <p className="text-sm text-muted-foreground">Action-packed gameplay scene {item}</p>
               </CardContent>
             </Card>
