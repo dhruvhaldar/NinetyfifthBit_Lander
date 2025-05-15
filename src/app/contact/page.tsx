@@ -18,7 +18,7 @@ const ContactPage = () => {
       <header className="text-center py-8 bg-card shadow-[0_0_20px_hsl(var(--primary)/0.25)] rounded-lg border-2 border-primary/20 p-6">
         <Mail className="w-16 h-16 text-primary mx-auto mb-4" />
         <h1 className="text-2xl font-heading text-primary mb-2">Get In Touch</h1>
-        <p className="text-xl text-foreground/80">I'd love to hear from you! Whether you have questions, feedback, or just want to say hi.</p>
+        <p className="text-lg text-foreground/80">I'd love to hear from you! Whether you have questions, feedback, or just want to say hi.</p>
       </header>
 
       <Card className="shadow-[0_0_15px_hsl(var(--primary)/0.15)] border-border">
@@ -29,7 +29,7 @@ const ContactPage = () => {
           </CardDescription>
         </CardHeader>
         <CardContent className="text-center space-y-6">
-          <p className="text-lg text-foreground/90">
+          <p className="text-base text-foreground/90">
             For support, press inquiries, or general questions, please email me at:
           </p>
           <Button size="lg" asChild className="font-heading text-base group">
@@ -53,7 +53,7 @@ const ContactPage = () => {
         </CardHeader>
         <CardContent className="text-center">
            {/* Placeholder for social media links */}
-          <p className="text-muted-foreground">
+          <p className="text-muted-foreground text-sm">
             My social media channels will be available soon. Keep an eye on this space!
           </p>
         </CardContent>
