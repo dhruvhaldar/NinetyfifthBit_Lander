@@ -13,8 +13,8 @@
     --popover: 0 0% 100%;
     --popover-foreground: 0 0% 10%;
 
-    --primary: 217 91% 60%; /* Bright Blue #3B82F6 */
-    --primary-foreground: 0 0% 98%; /* White text on primary */
+    --primary: 348 83% 47%; /* Crimson Red #DC2626 */
+    --primary-foreground: 355 100% 97%; /* Light Pink/White text on primary */
 
     --secondary: 0 0% 85%; /* Lighter gray for secondary elements */
     --secondary-foreground: 0 0% 10%;
@@ -22,15 +22,15 @@
     --muted: 0 0% 90%; /* Muted gray */
     --muted-foreground: 0 0% 40%; /* Darker muted text */
 
-    --accent: 217 91% 60%; /* Bright Blue #3B82F6 */
-    --accent-foreground: 0 0% 98%;
+    --accent: 348 83% 47%; /* Crimson Red #DC2626 */
+    --accent-foreground: 355 100% 97%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
 
     --border: 0 0% 80%; /* Border color */
     --input: 0 0% 85%;
-    --ring: 217 91% 60%; /* Bright Blue for focus rings */
+    --ring: 348 83% 47%; /* Crimson Red for focus rings */
 
     --radius: 0.3rem; /* Slightly less rounded for blockier feel */
 
@@ -57,19 +57,19 @@
     --card-foreground: 0 0% 98%;
     --popover: 0 0% 3.9%;
     --popover-foreground: 0 0% 98%;
-    --primary: 217 80% 65%; /* Lighter Blue #60A5FA */
-    --primary-foreground: 0 0% 98%;
+    --primary: 348 83% 60%; /* Lighter Crimson #E95C5C */
+    --primary-foreground: 355 100% 97%;
     --secondary: 0 0% 14.9%;
     --secondary-foreground: 0 0% 98%;
     --muted: 0 0% 14.9%;
     --muted-foreground: 0 0% 63.9%;
-    --accent: 217 80% 65%; /* Lighter Blue #60A5FA */
-    --accent-foreground: 0 0% 98%;
+    --accent: 348 83% 60%; /* Lighter Crimson #E95C5C */
+    --accent-foreground: 355 100% 97%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
     --border: 0 0% 14.9%;
     --input: 0 0% 14.9%;
-    --ring: 217 80% 65%;
+    --ring: 348 83% 60%;
     --chart-1: 220 70% 50%;
     --chart-2: 160 60% 45%;
     --chart-3: 30 80% 55%;

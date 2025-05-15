@@ -50,7 +50,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head>
         <link rel="manifest" href="/manifest.json" />
-        <meta name="theme-color" content="#3B82F6" />
+        <meta name="theme-color" content="#DC2626" />
         {/*
           TODO: Ad Network Script
           If you're integrating with an ad network like Google AdSense,
