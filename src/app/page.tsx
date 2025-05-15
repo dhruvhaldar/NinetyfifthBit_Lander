@@ -21,7 +21,7 @@ export default function HomePage() {
         <p className="text-lg md:text-xl text-foreground/80 max-w-2xl mx-auto mb-8">
           Forging new worlds from classic pixels. I am an indie game developer passionate about creating unique, engaging, and retro-inspired games.
         </p>
-        <Button size="lg" asChild className="font-heading text-lg">
+        <Button size="lg" asChild className="font-heading text-base">
           <Link href="#my-games">Explore My Games</Link>
         </Button>
       </section>
