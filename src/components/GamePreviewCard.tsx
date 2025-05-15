@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import type { ReactNode } from 'react';
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent, CardDescription, CardFooter, CardHeader } from '@/components/ui/card'; // Removed CardTitle
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
 
@@ -21,7 +21,8 @@ const GamePreviewCard = ({ title, description, imageSrc, imageAlt, dataAiHint, l
       <CardHeader className="pb-2">
         <div className="flex items-center gap-3 mb-2">
           {icon}
-          <CardTitle className="text-2xl font-heading text-primary">{title}</CardTitle>
+          {/* Changed from CardTitle to h3 for better semantics */}
+          <h3 className="text-xl font-heading text-primary font-semibold leading-none tracking-tight">{title}</h3>
         </div>
         <CardDescription className="text-foreground/70 text-sm h-12 overflow-hidden">{description}</CardDescription>
       </CardHeader>
