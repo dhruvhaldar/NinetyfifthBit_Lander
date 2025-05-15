@@ -1,11 +1,11 @@
 import type { Metadata } from 'next';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import IdeaGenerator from '@/components/chip-quest/IdeaGenerator';
-import { Cpu, Lightbulb } from 'lucide-react';
+// import IdeaGenerator from '@/components/chip-quest/IdeaGenerator'; // Removed as AI Idea Spark section is removed
+import { Cpu } from 'lucide-react'; // Removed Lightbulb as it's no longer used
 
 export const metadata: Metadata = {
   title: 'Chip Quest | Ninetyfifth Bit',
-  description: 'Preview of Chip Quest, an upcoming digital adventure game. Generate game ideas with AI!',
+  description: 'Preview of Chip Quest, an upcoming digital adventure game.', // Updated description
 };
 
 const ChipQuestPage = () => {
@@ -47,6 +47,7 @@ const ChipQuestPage = () => {
         </CardContent>
       </Card>
 
+      {/* AI Idea Spark section removed
       <Card className="shadow-xl border-border">
         <CardHeader className="text-center">
           <Lightbulb className="w-12 h-12 text-primary mx-auto mb-3" />
@@ -59,6 +60,7 @@ const ChipQuestPage = () => {
           <IdeaGenerator />
         </CardContent>
       </Card>
+      */}
     </div>
   );
 };
