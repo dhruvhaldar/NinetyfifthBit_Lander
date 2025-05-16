@@ -18,7 +18,7 @@ export default function HomePage() {
         <h1 className="text-2xl md:text-3xl font-heading mb-4 text-primary drop-shadow-sm">
           Ninetyfifth Bit
         </h1>
-        <p className="text-lg md:text-xl text-foreground/80 max-w-2xl mx-auto mb-8">
+        <p className="text-lg md:text-xl text-foreground/80 max-w-2xl mx-auto mb-8 font-retro">
           Forging new worlds from classic pixels. I am an indie game developer passionate about creating unique, engaging, and retro-inspired games.
         </p>
         <Button size="sm" asChild className="font-heading text-xs animate-pulse">
