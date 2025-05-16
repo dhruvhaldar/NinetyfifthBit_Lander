@@ -4,11 +4,11 @@ const PrivacyPolicyPage: React.FC = () => {
   const privacyPolicyHtmlContent = `
     <div class="container mx-auto p-4">
       <p>
-      <h1>Cosmic Capture Privacy Policy</h1>
+      <h1>Privacy Policy</h1>
     <p>Effective Date: May 16, 2025</p>
 
     <h3>1. Introduction</h3>
-    <p>Welcome to Cosmic Capture! This Privacy Policy explains how we collect, use, and protect your information when you use our game.</p>
+    <p>This Privacy Policy explains how we collect, use, and protect your information when you use our game.</p>
 
     <h3>2. Information We Collect</h3>
     <p>We collect the following types of information:</p>
