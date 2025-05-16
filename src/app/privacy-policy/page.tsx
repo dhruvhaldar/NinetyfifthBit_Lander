@@ -57,7 +57,7 @@ const PrivacyPolicyPage: React.FC = () => {
   `;
 
   return ( // Decrease the font size of all header tags within the rendered HTML content
-    <div style={{ '--header-font-size': '0.5em', fontFamily: 'Arial, sans-serif' } as React.CSSProperties} dangerouslySetInnerHTML={{ __html: `<style>
+    <div style={{ '--header-font-size': '1em', fontFamily: 'Arial, sans-serif' } as React.CSSProperties} dangerouslySetInnerHTML={{ __html: `<style>
  h1, h2, h3, h4, h5, h6 { font-size: var(--header-font-size); }
  h3 { padding-top: 1em; padding-bottom: 1em;}
     </style>${privacyPolicyHtmlContent}` }} />
