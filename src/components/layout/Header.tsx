@@ -23,6 +23,9 @@ const Header = () => {
           <Button variant="ghost" asChild className="font-heading text-xs hover:bg-accent/10 hover:text-primary">
             <Link href="/contact">Contact</Link>
           </Button>
+ <Button variant="ghost" asChild className="font-heading text-xs hover:bg-accent/10 hover:text-primary">
+ <Link href="/privacy-policy">Privacy Policy</Link>
+ </Button>
         </nav>
       </div>
     </header>
