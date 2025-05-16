@@ -58,7 +58,11 @@ const PrivacyPolicyPage: React.FC = () => {
 
   return ( // Decrease the font size of all header tags within the rendered HTML content
     <div style={{ '--header-font-size': '1em', fontFamily: 'Arial, sans-serif' } as React.CSSProperties} dangerouslySetInnerHTML={{ __html: `<style>
- h1, h2, h3, h4, h5, h6 { font-size: var(--header-font-size); }
+ h1, h2, h3, h4, h5, h6 { 
+  font-size: var(--header-font-size);
+ }
+ ul { list-style-type: disc; margin-left: 1.5em; }
+ li { margin-bottom: 0.5em; }
  h3 { padding-top: 1em; padding-bottom: 1em;}
     </style>${privacyPolicyHtmlContent}` }} />
   ); // Added top padding to the main container to prevent overlap with the header.
